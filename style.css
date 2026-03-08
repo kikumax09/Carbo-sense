@@ -1,0 +1,242 @@
+body {
+    font-family: Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    
+    color:rgb(11, 219, 67);
+    text-align: center;
+    padding: 30px;
+}
+
+.card {
+  background: var(--card);
+    padding: 25px;
+    border-radius: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+input, button {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 12px;
+    border: none;
+    font-size: 16px;
+}
+
+button {
+    background: linear-gradient(90deg,#52b788,#95d5b2);
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #95d5b2;
+}
+
+canvas {
+    margin-top: 20px;
+}
+
+footer {
+    color: rgb(11, 219, 67);
+    padding: 1em;
+    text-align: center;
+  }
+  footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+    justify-content: space-between;
+  }
+  footer ul li {
+    margin-right: 20px;
+  }
+  footer a {
+    color: rgb(11, 219, 67);
+    text-decoration: none;
+  }
+ /* ----------- PAGE D'ACCUEIL ----------- */
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+}
+
+.subtitle {
+  font-size: 20px;
+  opacity: 0.9;
+  margin: 20px 0 40px;
+}
+
+.main-button {
+  padding: 18px 30px;
+  border-radius: 40px;
+  background: linear-gradient(90deg,#52b788,#95d5b2);
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.main-button:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 25px #95d5b2;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin: 60px auto;
+  max-width: 900px;
+}
+
+.feature {
+  background: rgba(255,255,255,0.07);
+  padding: 20px;
+  border-radius: 18px;
+  width: 260px;
+}
+.me {
+  background: rgba(255,255,255,0.07);
+  padding: 20px;
+  border-radius: 18px;
+  width: 500px;
+  font-family: Arial, sans-serif;
+}
+footer {
+  opacity: 0.6;
+  margin: 40px 0;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 15px;
+  color: #95d5b2;
+  text-decoration: none;
+}
+/* ----------- ANIMATION D'ENTRÉE ----------- */
+
+.fade-in {
+  animation: fadeInUp 1.2s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(40px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+.fade-in {
+  animation: fadeInUp 1.2s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(40px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+:root {
+  --bg: linear-gradient(120deg,#081c15,#1b4332);
+  --text: white;
+  --card: rgba(255,255,255,0.07);
+}
+
+.light {
+  --bg: linear-gradient(120deg,#f8f9fa,#e9ecef);
+  --text: #111;
+  --card: white;
+}
+/* ----------- NAVBAR ----------- */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+}
+
+nav-links a {
+  position: relative;
+  margin: 0 12px;
+  color: inherit;
+  text-decoration: none;
+  font-weight: 500;
+}
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background: #95d5b2;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+
+.nav-links button {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+.lien{
+  color: aqua;
+}
+/* ----------- ANIMATION MENU ----------- */
+
+.navbar {
+  animation: slideDown 0.8s ease forwards;
+  opacity: 0;
+}
+
+@keyframes slideDown {
+  from {
+      opacity: 0;
+      transform: translateY(-30px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+#themeToggle {
+  transition: transform 0.3s ease;
+}
+
+#themeToggle:hover {
+  transform: rotate(20deg) scale(1.2);
+}
+
+
+
